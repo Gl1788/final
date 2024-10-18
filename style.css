@@ -1,0 +1,133 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+.page{
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+} 
+header{
+    height: 200px;
+    padding: 20px 0;   
+}
+.logo{
+    width: 50%; 
+}
+.logo img{
+    width: 150px;
+    right: 150px;
+    border-radius: 50%;
+}
+.menu{
+    padding-top: 30px;
+    width: 50%;
+    text-align:right;
+}
+.menu a{
+    color:blueviolet;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+}
+.menu a:hover{
+    border-bottom: 1px solid white;
+    transition: 1s;
+    border-radius: 5px;
+    padding: 10px;
+}
+section.sobre{
+    height: calc(100% - 700px);
+    width: calc(100% - 250px);
+    position: relative; 
+}
+.extras{
+    position: absolute;
+    bottom: -650px;
+    right: -500px;
+    width: 500px;
+    height: 500px;
+    background-color: #8a2be2;
+    border-radius: 50%;
+}
+.social-media{
+    position: absolute;
+    right: 280px;
+    top: 30px;
+}
+.social-media img{
+    display: block;
+    width: 70px;
+    margin: 20px 0;
+}
+.texto-sobre{
+    margin-top: 100px;
+    color:aliceblue;
+    padding: 10px;
+}
+.texto-sobre h1{
+    font-size: 45px;
+    color: aliceblue;
+}
+.texto-sobre p{
+    margin: 20px 0;
+    font-size: 14px;
+    font-weight: bold;
+    max-width: 800px;
+}
+.texto-curriculo{
+    color: antiquewhite;
+    display: grid;
+    font-size: 14px;
+}
+.texto-curriculo h1{
+    color: #8a2be2;
+    font-size: 30px;
+}
+.texto-curriculo h2{
+    color: #8a2be2;
+    font-size: 20px;
+}
+.sobre-p{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-size: 25px;
+    font-weight:lighter;
+    color:aliceblue;
+    padding: 10px;
+    border-radius: 8px;
+}
+.sobre-h1{
+    color: aliceblue;
+    margin: 20px;
+}
+.sobre-a{
+    color:aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+    padding: 15px;
+    border-radius: 8px;
+}
+.sobre-a:hover{
+    border-bottom: 1px solid #8a2be2;
+    transition: 1s;
+    border-radius: 5px;
+    padding: 10px;
+}
+@media(max-width: 767px){
+    .extras {
+        background-color: rgba(0, 0, 0, 0);
+}
+}
